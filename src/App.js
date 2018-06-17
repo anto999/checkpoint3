@@ -41,7 +41,7 @@ class App extends Component {
         </p>
         <ul>{this.state.targets.map(target => <Tableau {...target }/>  )
       
-      }<Button />
+      }
 </ul>
       </div>
     );}
