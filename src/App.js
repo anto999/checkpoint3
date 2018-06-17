@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-//import Tableau from './components/Tableau'
+import Tableau from './components/Tableau'
 
 class App extends Component {
 
@@ -25,15 +25,8 @@ class App extends Component {
               picture: "https://starwars-visualguide.com/assets/img/characters/9.jpg"
           }
       ]
-
-
       };
-    }
-
-
-//        
-
-
+    }    
 
   render() {
     return (
@@ -45,10 +38,12 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <ul>{this.state.targets.map(target => <li>{target.name} is {target.status}  :<img src ={target.picture}/>  <br/></li>)}</ul>
+        <ul>{this.state.targets.map(target => <Tableau {...target}/>)}</ul>
       </div>
     );
   }
 }
 
 export default App;
+
+//<li>{target.name} is {target.status}  :<img src ={target.picture}/>  <br/></li>)}
