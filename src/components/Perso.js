@@ -13,7 +13,7 @@ const Perso = ({ name,  remove, picture,status}) => <ListGroupItem>
             <h3>{ name }</h3>
         </Col>
         <Col xs={3}>
-            <p>{ status } </p>
+            <p>{ status + is back again!} </p>
         </Col>
     </Row>
 </ListGroupItem>

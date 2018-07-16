@@ -8,7 +8,7 @@ const Tableau = ({ name, picture, status}) => (
    
 
    <Button  style={{
-                  width: "170px",
+                  width: "160px",
                   height: "44px",
                   fontSize: "16px",
                   borderRadius: "32px",
